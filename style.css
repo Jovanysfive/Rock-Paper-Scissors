@@ -1,0 +1,89 @@
+:root {
+    --primary-light: #ddd;
+    --primary-dark: #172336;
+    --secondary-dark: #393e46;
+    --secondary-dark-hover: #4a4f57;
+    --secondary-dark-active: #5b5f68;
+    --header: #111720;
+  }
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+    position: relative;
+    min-height: 100%;
+  }
+body {
+    background-color: var(--primary-dark);
+   color: var(--primary-light);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 100px;
+  }
+button{
+    border: none;
+    color:inherit ;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+.header{
+    display:flex;
+    justify-content: center;
+    padding: 40px,40px;
+    background-color: var(--header);
+}
+.title{
+    font-family: 'Press Start 2P', cursive;
+}
+/*Main*/
+main{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+   align-items: center;
+}
+.player-button{
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    background-color: var(--secondary-dark);
+}
+.player-button:hover{
+    background-color: var(--secondary-dark-hover);
+}
+.player-button:active{
+    background-color: var(--secondary-dark-active);
+}
+.sign{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+/*Footer*/
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 80px;
+    color: var(--primary-light);
+    font-size: 20px;
+}
+.fa-github {
+    color: var(--primary-light);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+  }
