@@ -1,13 +1,12 @@
-function getComputerChoise(){
-   let numrand= Math.floor(Math.random() *3)
-   let a =["rock", "paper", "scissors"]
-   a[numrand];
-}
-let computerchoise=getComputerChoise();
 let playerscore=0
 let computerscore=0
 
-//Utilizamos a função para a logica de vencedor do perdra papel e tesoura entre o usuario e computador
+function getComputerChoice(){
+   let numrand= Math.floor(Math.random() *3)
+   let choise =["rock", "paper", "scissors"]
+  return  choise[numrand];
+}
+
  function getwinner(playerSelection,computerSelection){
     if(playerSelection===computerSelection){
     }
@@ -27,17 +26,18 @@ let computerscore=0
     }
 }
 
-for (let index = 0; index < 5; index++)
-{
-    getwinner("rock", getComputerChoise())
+const rock = document.querySelector("#Rock");
+const paper = document.querySelector("#Paper");
+const scissors = document.querySelector("#Scissors");
+
+function handleButtonClick(choice) {
+    console.log(`Clicked ${choice}`);
+
 }
 
-console.log(`Pontuação do jogador ${playerscore}`)
-console.log(`Pontuação do computador ${computerscore}`)
+rock.addEventListener('click', () => handleButtonClick('Rock'));
+paper.addEventListener('click', () => handleButtonClick('Paper'));
+scissors.addEventListener('click', () => handleButtonClick('Scissors'));
 
-if (playerscore>computerscore) {
-    console.log("Player winner")
-}else{
-    console.log("computer winner")
-}
+
 
