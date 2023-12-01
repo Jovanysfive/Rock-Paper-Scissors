@@ -1,12 +1,7 @@
 function getComputerChoise(){
-   let numrand= Math.floor(Math.random() *3)+1
-   if(numrand===1){
-    return "rock"
-   }if(numrand===2){
-    return "paper";
-   }else{
-    return "scissors"
-   }
+   let numrand= Math.floor(Math.random() *3)
+   let a =["rock", "paper", "scissors"]
+   a[numrand];
 }
 let computerchoise=getComputerChoise();
 let playerscore=0

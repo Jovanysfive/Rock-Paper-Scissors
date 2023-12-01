@@ -6,7 +6,7 @@
     --secondary-dark-active: #5b5f68;
     --header: #111720;
   }
-  *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
