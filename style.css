@@ -68,6 +68,20 @@ main{
     font-size: 60px;
     margin-bottom: 10px;
 }
+.soccer-button{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+   align-items: center;
+}
+.soccer{
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    background-color: var(--secondary-dark);
+    margin-top: 40px;
+}
+
 /*Footer*/
 .footer{
     position: absolute;
